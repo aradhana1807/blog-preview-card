@@ -3,8 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+      html,
+      body {
+        font-family: "Figtree", sans-serif;
+      }
+
+      .container {
+        border: #000 1px solid;
+        border-right-width: 8px;
+        border-bottom-width: 8px;
+        border-color: #000;
+        border-radius: 30px;
+      }
+
+      .transform-scale {
+        transition: transform 0.2s ease;
+      }
+
+      .scale-105 {
+        transform: scale(1.05);
+        border-right-width: 12px;
+        border-bottom-width: 12px;
+      }
+    </style>
 
     <link
       rel="icon"
@@ -20,7 +46,7 @@
   >
     <div
       id="blog-container"
-      class="container w-[400px] rounded-2xl border-2 border-r-8 border-b-8 border-black p-4 bg-white transform transition-transform"
+      class="container w-[400px] p-4 bg-white transform-scale"
     >
       <div class="image__container p-2">
         <img
