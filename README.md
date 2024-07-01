@@ -45,17 +45,15 @@ Users should be able to:
 
 Hover focused state when the blog title is hovered, the card is scaled up.
 
-```js
-const blogTitle = document.getElementById("blog-title");
-const blogContainer = document.getElementById("blog-container");
+```css
+.container {
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  transition: all 0.2s ease-in-out;
+}
 
-blogTitle.addEventListener("mouseover", () => {
-  blogContainer.classList.add("scale-105");
-});
-
-blogTitle.addEventListener("mouseout", () => {
-  blogContainer.classList.remove("scale-105");
-});
+.container:hover {
+  box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 1);
+}
 ```
 
 ### Useful resources
@@ -67,5 +65,3 @@ blogTitle.addEventListener("mouseout", () => {
 - Website - [Aradhana Nayak](https://re-myproject-gallery.vercel.app/)
 - Frontend Mentor - [@aradhana1807](https://www.frontendmentor.io/profile/aradhana1807)
 - Github - [@aradhana1807](https://github.com/aradhana1807)
-
-

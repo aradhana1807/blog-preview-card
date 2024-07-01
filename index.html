@@ -14,21 +14,12 @@
       }
 
       .container {
-        border: #000 1px solid;
-        border-right-width: 8px;
-        border-bottom-width: 8px;
-        border-color: #000;
-        border-radius: 30px;
+        box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+        transition: all 0.2s ease-in-out;
       }
 
-      .transform-scale {
-        transition: transform 0.2s ease;
-      }
-
-      .scale-105 {
-        transform: scale(1.05);
-        border-right-width: 12px;
-        border-bottom-width: 12px;
+      .container:hover {
+        box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 1);
       }
     </style>
 
@@ -46,7 +37,7 @@
   >
     <div
       id="blog-container"
-      class="container w-[400px] p-4 bg-white transform-scale"
+      class="container max-w-[384px] p-4 bg-white border-2 border-black rounded-2xl cursor-pointer"
     >
       <div class="image__container p-2">
         <img
@@ -59,14 +50,14 @@
       <div class="text__container p-2">
         <span class="font-bold bg-[#f4d04e] p-2 rounded-md">Learning</span>
 
-        <h3 class="mt-4">Published 21 Dec 2023</h3>
+        <p class="mt-4">Published 21 Dec 2023</p>
 
-        <h1
+        <p
           id="blog-title"
           class="font-bold text-xl mt-4 mb-4 cursor-pointer hover:text-[#f4d04e]"
         >
           HTML & CSS foundations
-        </h1>
+        </p>
 
         <p class="text-gray-400 text-[16px]">
           These languages are the backbone of every website, defining structure,
@@ -102,6 +93,4 @@
       >.
     </div> -->
   </body>
-
-  <script src="script.js"></script>
 </html>
