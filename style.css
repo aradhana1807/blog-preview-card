@@ -8,8 +8,9 @@ body {
 .transform-scale {
   transition: transform 0.3s ease;
 }
+
 .scale-105 {
   transform: scale(1.025);
-  border-right-width: 12px;
-  border-bottom-width: 12px;
+  border-right-width: 13px;
+  border-bottom-width: 13px;
 }
